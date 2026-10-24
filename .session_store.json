@@ -1,0 +1,15 @@
+{
+  "stage2Unlocked": false,
+  "students": {},
+  "classTimer": {
+    "isRunning": false,
+    "startTime": null,
+    "durationMinutes": 25,
+    "endTime": null,
+    "isExpired": false
+  },
+  "submissions": [],
+  "groupComments": [],
+  "groupConclusions": {},
+  "lastUpdated": 1792827600000
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix 팩트 탐정단: 사라진 효성벼리 문화예술발표회",
+  "description": "초등학교 5~6학년을 위한 허위정보 판별 인터랙티브 탐정 활동 웹사이트",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

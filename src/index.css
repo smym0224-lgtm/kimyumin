@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @media print {
+    body {
+      background-color: white !important;
+      color: black !important;
+      font-size: 12pt;
+    }
+    .no-print {
+      display: none !important;
+    }
+    .print-only {
+      display: block !important;
+    }
+    .page-break-inside-avoid {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .shadow-sm, .shadow-md, .shadow-lg, .shadow-xl {
+      box-shadow: none !important;
+    }
+    .border {
+      border-color: #cbd5e1 !important;
+    }
+  }
+}
+
+/* Custom handwriting/memo font simulation */
+.font-memo {
+  font-family: 'Comic Sans MS', 'Pretendard', sans-serif;
+}
