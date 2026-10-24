@@ -124,7 +124,7 @@ export const TeacherAuthModal: React.FC<TeacherAuthModalProps> = ({
                   setPinInput(e.target.value);
                   setErrorMsg(null);
                 }}
-                placeholder="비밀번호를 입력하세요 (기본: 1030)"
+                placeholder="비밀번호를 입력하세요"
                 className="w-full px-4 py-3 text-sm rounded-xl border-2 border-slate-200 focus:border-indigo-600 focus:outline-none transition tracking-widest font-mono text-center text-lg"
               />
               <p className="text-[11px] text-slate-400 mt-1.5 text-center">

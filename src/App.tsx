@@ -112,8 +112,8 @@ export default function App() {
   const [remainingSeconds, setRemainingSeconds] = useState<number>(25 * 60);
   const [customMinutesInput, setCustomMinutesInput] = useState<number>(25);
 
-  // 교사 비밀번호 (기본값: 1030)
-  const [teacherPin, setTeacherPin] = useState<string>('1030');
+  // 교사 비밀번호 (기본값: 0224)
+  const [teacherPin, setTeacherPin] = useState<string>('0224');
   const [isTeacherAuthenticated, setIsTeacherAuthenticated] = useState<boolean>(false);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState<boolean>(false);
   const [pendingTeacherAction, setPendingTeacherAction] = useState<(() => void) | null>(null);
@@ -162,8 +162,11 @@ export default function App() {
   useEffect(() => {
     try {
       const savedPin = localStorage.getItem('fact_detective_teacher_pin');
-      if (savedPin) {
+      if (savedPin && savedPin !== '1030') {
         setTeacherPin(savedPin);
+      } else {
+        setTeacherPin('0224');
+        localStorage.setItem('fact_detective_teacher_pin', '0224');
       }
 
       // 이전 버전 타이머 정리

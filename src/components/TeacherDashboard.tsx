@@ -76,7 +76,7 @@ export const TeacherDashboard: React.FC<TeacherDashboardProps> = ({
   onBatchAutoDistribute,
   onAddSampleStudents,
   onOpenGroupShare,
-  currentPin = '1030',
+  currentPin = '0224',
   onChangePin,
   onClearAllSubmissions,
   stage2Unlocked,
@@ -1456,7 +1456,7 @@ export const TeacherDashboard: React.FC<TeacherDashboardProps> = ({
                     setOldPinInput(e.target.value);
                     setPinError(null);
                   }}
-                  placeholder="현재 사용 중인 비밀번호 (기본: 1030)"
+                  placeholder="현재 사용 중인 비밀번호"
                   className="w-full px-3.5 py-2.5 text-sm rounded-xl border-2 border-slate-200 focus:border-indigo-600 focus:outline-none"
                 />
               </div>
